@@ -28,3 +28,6 @@ requests>=2.31.0
 
 # Scientific computing
 scipy>=1.10.0
+
+# Machine learning libraries
+scikit-learn>=1.3.0
