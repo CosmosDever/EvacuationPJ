@@ -89,7 +89,7 @@ for i, pt in enumerate(patterns):
     p = pt['pattern']
     start_time = time.time()
     res = simulate(
-        csv_file='dataset.csv',
+        csv_file='suzu_edges_modified.csv',
         human_speeds=p['human_speeds'],
         model=p['model'],
         weight=p['weight'],
