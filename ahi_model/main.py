@@ -48,7 +48,7 @@ patterns = [
     # bpr('travel_time', 'near', NUM_OF_PEOPLE, [1.25, 1.0, 1.5], 1.919, 6.9373, '提案手法', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, BATCH_SIZE)),
     # bpr('length', 'near', NUM_OF_PEOPLE, [1.25, 1.0, 1.5], 1.919, 6.9373, '比較手法', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, BATCH_SIZE)),
 
-    # bpr('travel_time', 'near', 1000, [1.25], 1.919, 6.9373, '1000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
+    bpr('travel_time', 'near', 1000, [1.25], 1.919, 6.9373, '1000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
     # bpr('travel_time', 'near', 2000, [1.25], 1.919, 6.9373, '2000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
     # bpr('travel_time', 'near', 3000, [1.25], 1.919, 6.9373, '3000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
     # bpr('travel_time', 'near', 4000, [1.25], 1.919, 6.9373, '4000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
@@ -58,7 +58,7 @@ patterns = [
     # bpr('travel_time', 'near', 1700, [1.25], 1.919, 6.9373, '1700', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
 
 
-    bpr('travel_time', 'far', 1000, [1.25], 1.919, 6.9373, '1000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
+    # bpr('travel_time', 'far', 1000, [1.25], 1.919, 6.9373, '1000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
     # bpr('travel_time', 'far', 2000, [1.25], 1.919, 6.9373, '2000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
     # bpr('travel_time', 'far', 3000, [1.25], 1.919, 6.9373, '3000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
     # bpr('travel_time', 'far', 4000, [1.25], 1.919, 6.9373, '4000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
@@ -89,7 +89,7 @@ for i, pt in enumerate(patterns):
     p = pt['pattern']
     start_time = time.time()
     res = simulate(
-        csv_file='suzu_edges_modified.csv',
+        csv_file='suzu_edges.csv',
         human_speeds=p['human_speeds'],
         model=p['model'],
         weight=p['weight'],

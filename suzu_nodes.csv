@@ -1,4 +1,4 @@
-osmid,latitude,longitude,street_count,junction,highway,longitude,latitude
+osmid,y,x,street_count,junction,highway,longitude,latitude
 1281068967,37.4973056,137.323359,3,,,137.323359,37.4973056
 1281068968,37.4430004,137.3439648,3,,,137.3439648,37.4430004
 1281069014,37.458164,137.2306908,3,,,137.2306908,37.458164
