@@ -11,7 +11,7 @@ import time
 CHUNK_SIZE = 10
 
 # 避難人数
-NUM_OF_PEOPLE = 50000
+NUM_OF_PEOPLE = 13531
 
 # 必要ファイル
 NEEDS = [
@@ -64,7 +64,7 @@ patterns = [
     # bpr('travel_time', 'far', 4000, [1.25], 1.919, 6.9373, '4000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
     # bpr('travel_time', 'far', 5000, [1.25], 1.919, 6.9373, '5000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
     # bpr('travel_time', 'far', 5000, [1.25], 1.919, 6.9373, '提案手法 遠', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE),10e-54),
-    bpr('travel_time', 'near', 50000, [1.25], 1.1192, 5.0365, '提案手法 近', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE),10e-54),
+    bpr('travel_time', 'near', NUM_OF_PEOPLE, [1.25], 1.1192, 5.0365, '提案手法 近', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE),10e-54),
     # bpr('length', 'near', 5000, [1.25], 1.919, 6.9373, '比較手法', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE),0.04),
     # bpr('travel_time', 'far', 4100, [1.25], 1.919, 6.9373, '4000', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
     # bpr('travel_time', 'far', 4200, [1.25], 1.919, 6.9373, '4200', calcWaitInterval(WAIT_INTERVAL, NUM_OF_PEOPLE, NUM_OF_PEOPLE)),
